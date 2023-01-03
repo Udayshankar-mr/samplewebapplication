@@ -16,10 +16,12 @@ public class ApplicationController {
 	public String welcome(ModelMap model) { 
 		model.addAttribute("msgArgument", "Maven Java Web Application Project: Success!");
 		int value;
+		value=+1;
         model.addAttribute("value","welcome");
 		return "index";
  
 	}
+	
  
 	@RequestMapping(value="/Print/{arg}", method = RequestMethod.GET)
 	public String welcomeName(@PathVariable String arg, ModelMap model) {
