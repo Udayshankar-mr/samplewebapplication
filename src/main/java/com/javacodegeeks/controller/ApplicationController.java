@@ -16,7 +16,8 @@ public class ApplicationController {
 	public String welcome(ModelMap model) { 
 		model.addAttribute("msgArgument", "Maven Java Web Application Project: Success!");
 		int value;
-		value=+1;
+		float val;
+		val=1+2;
         model.addAttribute("value","welcome");
 		return "index";
  
