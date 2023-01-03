@@ -15,7 +15,8 @@ public class ApplicationController {
 	@RequestMapping(value="/Test", method = RequestMethod.GET)
 	public String welcome(ModelMap model) { 
 		model.addAttribute("msgArgument", "Maven Java Web Application Project: Success!");
-
+		int value;
+        model.addAttribute("value","welcome");
 		return "index";
  
 	}
